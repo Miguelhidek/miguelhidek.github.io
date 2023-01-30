@@ -1,0 +1,361 @@
+*{
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: "Alexandria", sans-serif;
+	overflow-x: hidden;
+}
+
+header{
+	width: 100vw;
+	height: 50px;
+	background: transparent;
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 99;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+.header{
+	width: 100%;
+	max-width: 1100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+nav{
+	color: #FFF;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+
+}
+
+nav ul li{
+	display: inline-block;
+}
+
+nav ul li a{
+	text-transform: uppercase;
+	font-weight: 700;
+	margin: 1px;
+	padding: 10px;
+	height: 100%;
+	cursor: pointer;
+}
+
+nav ul li:hover{
+	color: #9400D3;
+}
+
+section{
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.apresentation{
+	height: 600px;
+	background-color: #333;
+	/*background-image: url('./assets/media/apresentation-wallpaper.jpg');*/
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	color: #FFF;	
+}
+
+.section-content{
+	width: 100%;
+	max-width: 1100px;
+	height: 80%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.rotate{
+	width: 100vw;
+	height: 30vh;
+	rotate: 1.5deg;
+	margin-top: -50px;
+	margin-left: -10px;
+	background-color: #9932CC;
+}
+
+.align{
+	color: #FFF;
+	margin-left: 20px;
+	rotate: -1.5deg;
+}
+
+.contact{
+	color: #FFF;
+	background-image: conic-gradient(#9932CC, #000);
+	height: 400px;
+}
+
+footer{
+	width: 100vw;
+	min-height: 50px;
+	color: #FFF;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #333;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Specific Area CSS */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.apresentation-content{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	padding: 20px;
+}
+
+.apresentation-content div{
+	flex: 1;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.apresentation-content div img{
+	width: 80%;
+}
+
+.apresentation-content div:first-child{
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-direction: column;
+}
+
+.apresentation-content h1{
+	font-size: 48px;
+}
+
+.apresentation-content h5{
+	color: #BA55D3;
+	margin-top: -12px;
+	font-size: 24px;
+}
+
+.apresentation-content p{
+	font-family: "Source Code Pro";
+}
+
+.project-content-filter {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.project-content-filter h1{
+	text-transform: uppercase;
+	margin: 10px;
+}
+
+.project-content-filter h1 span{
+	font-size: 16px;
+}
+
+.project-filter-container{
+	display: flex;
+	border-radius: 20px;
+	border: 2px solid #FFF;
+	overflow: hidden;
+}
+
+.project-filter{
+	display: inline-block;
+	padding: 10px;
+	border-right: 2px solid #FFF;
+	transition: all .5s;
+	text-transform: uppercase;
+	font-family: "Source Code Pro";
+	cursor: pointer;
+}
+
+.project-filter-container div:last-child{
+	border-right: 0;
+}
+
+.project-filter:hover, .actived{
+	color: #9932CC;
+	background-color: #FFF;
+}
+
+.project-content{
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: column;
+	padding:50px 20px;
+
+}
+
+.project-item{
+	width: 100%;
+	height: 300px;
+	padding: 0px 0;
+	display: flex;
+	flex-direction: row;
+}
+
+.reverse{
+	flex-direction: row-reverse;
+}
+
+.project-item div{
+	flex: 1;
+	padding: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #444;
+}
+
+.project-item img{
+	width: 50%;
+	border-radius: 10px;
+	transition: all .5s;
+}
+
+.project-item img:hover{
+	width: 65%;
+}
+
+.project-item div:first-child{
+	flex-direction: column;
+}
+
+.project-item div:last-child{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	/*background-color: #EEE;*/
+	border-radius: 10px;
+	background-image: linear-gradient(270deg, #EEE, #FAFAFA);
+
+}
+
+.project-item div:last-child h3 {
+	text-transform: uppercase;
+	border: 0px solid #F00;
+}
+
+.project-item div:last-child h4{
+	text-transform: uppercase;
+	color: #9932CC;
+}
+
+.project-item div:last-child p{
+	text-align: center;
+	width: 70%;
+	font-family: "Source Code Pro";
+}
+
+.project-item div:last-child a{
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 14px;
+	border-radius: 20px;
+	padding: 10px 25px;
+	color: #FFF;
+	background-color: #9932CC;
+	cursor: pointer;
+	margin-top: 20px;
+	transition: all .5s;
+}
+
+.project-item div:last-child a:hover{
+	color: #9932CC;
+	background-color: #FFF;
+}
+
+.contact-content{
+	width: 100%;
+	height: 100%;
+	padding: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	border-radius: 10px;
+}
+
+.contact-content h1{
+	font-size: 39px;
+	text-transform: uppercase;
+}
+
+.contact-content h3{
+	text-transform: uppercase;	
+	font-family: "Source Code Pro";
+}
+
+.button{
+	width: 200px;
+	height: 50px;
+	color: #000;
+	background-color: #FFF;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 15px;
+	transition: all .5s;
+	border-radius: 100px;
+	margin: 20px;
+}
+
+.button:hover{
+	color: #FFF;
+	border: 2px solid #000;
+	background-color: #000;
+}

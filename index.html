@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Miguel Hidek - Portifolio</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@300;500;700&family=Bebas+Neue&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@300;500;700&family=Bebas+Neue&family=Source+Code+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@300;500;700&family=Bebas+Neue&family=Source+Code+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<div class="header">
+			<nav>
+				<ul>
+					<li><a onclick='scrollSection("apresentation")'>Início</a></li>
+					<li><a onclick='scrollSection("projects")'>Projetos</a></li>
+					<li><a onclick='scrollSection("contact")'>Contato</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<main>
+		<section id="apresentation" class="apresentation">
+			<div class="section-content">
+				<div class="apresentation-content">
+					<div>
+						<h1>Miguel Hidek</h1>
+						<h5>Full Stack & Mobile Developer</h5>
+						<p>Formado em Análise e Desenvolvimento de Sistemas</p>
+					</div>
+					<div>
+						<img src="./assets/media/programming-ollustration.png"/>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="projects" class="rotate">
+			<div class="section-content align">
+				<div class="project-content-filter">
+					<h1> Projetos /<span> filtros</span> </h1>
+					<div class="project-filter-container">
+						<div class="project-filter actived">
+							Todos
+						</div>
+						<div class="project-filter">
+							Landing page
+						</div>
+						<div class="project-filter">
+							Artístico
+						</div>
+						<div class="project-filter">
+							E-commerce
+						</div>
+						<div class="project-filter">
+							Mobile
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div class="section-content">
+				<div class="project-content">
+					<div class="project-item">
+						<div>
+							<img src="./assets/media/icon-image.png"/>
+						</div>
+						<div>
+							<h3 class="project-item-name">App ParkenPay</h3>
+							<h4 class="project-item-type"> Mobile </h4>
+							<p class="project-item-description"> App mobile IOS e Android, desenvolvido com Reac-Native.</p>
+						</div>
+					</div>
+					<div class="project-item reverse">
+						<div>
+							<img src="./assets/media/parkenpay.png"/>
+						</div>
+						<div>
+							<h3 class="project-item-name">ParkenPay App</h3>
+							<h4 class="project-item-type"> Landing Page </h4>
+							<p class="project-item-description"> Apresentação do aplicativo, principais funções, links de download etc...</p>
+							<a href="http://parkenpay.com.br" target="_blank"> Visitar</a>
+						</div>
+					</div>
+					<div class="project-item">
+						<div>
+							<img src="./assets/media/project-1.png"/>
+						</div>
+						<div>
+							<h3 class="project-item-name">Carlos Osterne Representações</h3>
+							<h4 class="project-item-type"> Landing Page </h4>
+							<p class="project-item-description"> Apresentação da empresa, marcas e produtos envolvidos.</p>
+							<a href="https://miguelhidek.github.io/CarlosOsterneSiteProject/" target="_blank"> Visitar</a>
+						</div>
+					</div>
+					<div class="project-item reverse">
+						<div>
+							<img src="./assets/media/project-2.png"/>
+						</div>
+						<div>
+							<h3 class="project-item-name"> Brew Barw - Bar e Restaurante</h3>
+							<h4 class="project-item-type"> Landing Page </h4>
+							<p class="project-item-description"> Apresentação da empresa, galeria de imagens, serviços, cardápio e mais. Desenvolvido para fins academicos e desenvolvimento de ideias.</p>
+							<a href="https://miguelhidek.github.io/BrewBarwAcademic/" target="_blank"> Visitar</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="contact" class="contact">
+			<div class="section-content">
+				<div class="contact-content">
+					<h1>Precisa de um site ?</h1>
+					<h3>Entre em contato e faça seu orçamento agora</h3>
+					<a class="button" href="https://api.whatsapp.com/send?phone=5585988321789&text=Ol%C3%A1,%20eu%20gostaria%20de%20fazer%20um%20or%C3%A7amento%20de%20site,%20pode%20me%20ajudar%20?" target="_blank">
+						Fazer Orçamento
+					</a>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer>
+		Desenvolvido por Miguel Hidek
+	</footer>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
