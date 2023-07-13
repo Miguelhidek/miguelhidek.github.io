@@ -13,108 +13,48 @@
 <body>
 	<header>
 		<div class="header">
+			<div class="menuMobileToggle" onclick="menuMobileToggle()">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
 			<nav>
 				<ul>
 					<li><a onclick='scrollSection("apresentation")'>Início</a></li>
 					<li><a onclick='scrollSection("projects")'>Projetos</a></li>
 					<li><a onclick='scrollSection("contact")'>Contato</a></li>
+					<li><a onclick='scrollSection("partner")'>Parceiros</a></li>
 				</ul>
 			</nav>
 		</div>
 	</header>
 	<main>
-		<section id="apresentation" class="apresentation">
+		<section id="apresentation" class="apresentation" animation="false">
 			<div class="section-content">
 				<div class="apresentation-content">
-					<div class="apresentation-logo-container">
-						
-					</div>
+					<div class="apresentation-logo-container"></div>
 					<div class="apresentation-name-container">
 						<h1>Miguel Hidek</h1>
 						<h5>Full Stack Developer</h5>
 					</div>
 					<div class="skill-container">
+						<!-- Skill Exemple
 						<div class="skill" title="HTML e CSS">
 							<img src="./assets/media/html5-e-css3.jpg">
-						</div>
-						<div class="skill" title="Javascript">
-							<img src="./assets/media/javascript.jpg">
-						</div>
-						<div class="skill skill-loading" title="PHP">
-							<img src="./assets/media/php.jpg">
-						</div>
-						<div class="skill skill-loading" title="Banco de Dados">
-							<img src="./assets/media/database.jpg">
-						</div>
-						<div class="skill" title="React Native">
-							<img src="./assets/media/react-native.jpg">
-						</div>
-						<div class="skill skill-loading" title="React Js">
-							<img src="./assets/media/reactjs.jpg">
-						</div>
-						<div class="skill skill-loading" title="Laravel">
-							<img src="./assets/media/laravel.jpg">
-						</div>
-						<div class="skill skill-loading" title="Typescript">
-							<img src="./assets/media/typescript.jpg">
-						</div>
-						<div class="skill skill-loading" title="Sass">
-							<img src="./assets/media/sass.jpg">
-						</div>
-						<div class="skill" title="Git">
-							<img src="./assets/media/git.jpg">
-						</div>
-						<div class="skill skill-loading" title="Adonis Js">
-							<img src="./assets/media/adonisjs.jpg">
-						</div>
-						<div class="skill skill-loading" title="Angular">
-							<img src="./assets/media/angular.jpg">
-						</div>
-						<div class="skill skill-loading" title="Bootstrap">
-							<img src="./assets/media/bootstrap.jpg">
-						</div>
-						<div class="skill skill-loading" title="Docker">
-							<img src="./assets/media/docker.jpg">
-						</div>
-						<div class="skill skill-loading" title="Firebase">
-							<img src="./assets/media/firebase.jpg">
-						</div>
-						<div class="skill skill-loading" title="Flutter">
-							<img src="./assets/media/flutter.jpg">
-						</div>
-						<div class="skill skill-loading" title="Next Js">
-							<img src="./assets/media/nextjs.jpg">
-						</div>
-						<div class="skill skill-loading" title="Node Js">
-							<img src="./assets/media/nodejs.jpg">
-						</div>
-						<div class="skill skill-loading" title="Tailwindcss">
-							<img src="./assets/media/tailwindcss.jpg">
-						</div>
-						<div class="skill skill-loading" title="VeuJs">
-							<img src="./assets/media/vuejs.jpg">
-						</div>
+						</div> -->
 					</div>
 				</div>
 			</div>
 		</section>
-		<section id="projects">
+		<section id="projects" animation="false">
 			<div class="section-content">
 				<div class="project-content-filter">
-					<h1> Projetos <text>/</text><span> filtros</span> </h1>
+					<div class="section-content-title"> Projetos </div>
 					<div class="project-filter-container">
+						<!-- Filter Exemple
 						<div class="project-filter actived">
 							Todos
-						</div>
-						<div class="project-filter">
-							Landing page
-						</div>
-						<div class="project-filter">
-							E-commerce
-						</div>
-						<div class="project-filter">
-							Mobile
-						</div>
+						</div> -->
 					</div>
 				</div>
 			</div>
@@ -122,38 +62,15 @@
 		<section>
 			<div class="section-content">
 				<div class="project-content">
-					<div class="project-item">
+					<!-- Project Item Exemple -->
+					<!-- <div class="project-item">
 						<div class="project-item-image">
 							<img src="./assets/media/parkenpay.png"/>
 						</div>
 						<div class="project-item-description-container">
 							<div class="top">
-								<h3 class="project-item-name">App ParkenPay</h3>
-								<h4 class="project-item-type">Mobile</h4>
-							</div>
-							<div class="middle">
-								<p class="project-item-description">App mobile IOS e Android, desenvolvido com Reac-Native.</p>	
-							</div>
-							<div class="bottom">
-								<div class="project-item-tecnology-container">
-									<div class="skill" title="React Native">
-										<img src="./assets/media/react-native.jpg">
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="project-item">
-						<div class="project-item-image">
-							<img src="./assets/media/parkenpay.png"/>
-						</div>
-						<div class="project-item-description-container">
-							<div class="top">
-								<h3 class="project-item-name">ParkenPay App</h3>
+								<h3 class="project-item-name">ParkenPay</h3>
 								<h4 class="project-item-type">Landing Page </h4>
-							</div>
-							<div class="middle">
-								<p class="project-item-description">Apresentação do aplicativo e principais funções, links de download de app e relacionados.</p>	
 							</div>
 							<div class="bottom">
 								<div class="project-item-tecnology-container">
@@ -162,98 +79,40 @@
 									</div>
 									<div class="skill" title="Javascript">
 										<img src="./assets/media/javascript.jpg">
+									</div>
+									<div class="skill" title="Firebase">
+										<img src="./assets/media/firebase.jpg">
 									</div>
 								</div>
 								<a href="http://parkenpay.com.br/" target="_blank"> Visitar</a>
 							</div>
 						</div>
-					</div>
-					<div class="project-item">
-						<div class="project-item-image">
-							<img src="./assets/media/project-1.png"/>
-						</div>
-						<div class="project-item-description-container">
-							<div class="top">
-								<h3 class="project-item-name">Carlos Osterne Representações</h3>
-								<h4 class="project-item-type">Landing Page</h4>
-							</div>
-							<div class="middle">
-								<p class="project-item-description">Apresentação da empresa, marcas e produtos envolvidos.</p>	
-							</div>
-							<div class="bottom">
-								<div class="project-item-tecnology-container">
-									<div class="skill" title="HTML e CSS">
-										<img src="./assets/media/html5-e-css3.jpg">
-									</div>
-									<div class="skill" title="Javascript">
-										<img src="./assets/media/javascript.jpg">
-									</div>
-								</div>
-								<a href="https://carlososterne.com.br" target="_blank"> Visitar</a>
-							</div>
-						</div>
-					</div>
-					<div class="project-item">
-						<div class="project-item-image">
-							<img src="./assets/media/project-2.png"/>
-						</div>
-						<div class="project-item-description-container">
-							<div class="top">
-								<h3 class="project-item-name"> Brew Barw - Bar e Restaurante</h3>
-								<h4 class="project-item-type"> Landing Page </h4>
-							</div>
-							<div class="middle">
-								<p class="project-item-description"> Apresentação da empresa, galeria de imagens, serviços, cardápio e mais. Desenvolvido para fins academicos e desenvolvimento de ideias.</p>	
-							</div>
-							<div class="bottom">
-								<div class="project-item-tecnology-container">
-									<div class="skill" title="HTML e CSS">
-										<img src="./assets/media/html5-e-css3.jpg">
-									</div>
-									<div class="skill" title="Javascript">
-										<img src="./assets/media/javascript.jpg">
-									</div>
-								</div>
-								<a href="https://miguelhidek.github.io/BrewBarwAcademic/" target="_blank"> Visitar</a>
-							</div>
-						</div>
-					</div>
-					<div class="project-item">
-						<div class="project-item-image">
-							<img src="./assets/media/phoneTopProject.png"/>
-						</div>
-						<div class="project-item-description-container">
-							<div class="top">
-								<h3 class="project-item-name"> iPhoneTop Store</h3>
-								<h4 class="project-item-type"> E-commerce </h4>
-							</div>
-							<div class="middle">
-								<p class="project-item-description"> Apresentação de produtos, carrinho de compras, pesquisa filtros, campo de busca.</p>	
-							</div>
-							<div class="bottom">
-								<div class="project-item-tecnology-container">
-									<div class="skill" title="HTML e CSS">
-										<img src="./assets/media/html5-e-css3.jpg">
-									</div>
-									<div class="skill" title="Javascript">
-										<img src="./assets/media/javascript.jpg">
-									</div>
-								</div>
-								<a href="https://miguelhidek.github.io/phoneTopAcademic/" target="_blank"> Visitar</a>
-							</div>
-						</div>
-					</div>
+					</div> -->
 				</div>
 			</div>
 		</section>
-		<section id="contact" class="contact">
+		<section id="contact" class="contact" animation="false">
 			<div class="section-content">
 				<div class="contact-content">
-					<h1>Precisa de um site ?</h1>
-					<h3>Entre em contato e faça seu orçamento agora</h3>
+					<h1><span>Precisa de um site ?</span></h1>
+					<h3>Entre em contato <span>e faça seu orçamento agora</span></h3>
 					<a class="button" href="https://api.whatsapp.com/send?phone=5585988321789&text=Ol%C3%A1,%20eu%20gostaria%20de%20fazer%20um%20or%C3%A7amento%20de%20site,%20pode%20me%20ajudar%20?" target="_blank">
 						Fazer Orçamento
 					</a>
+				</div>
+			</div>
+		</section>
+		<section id="partner" class="partner">
+			<div class="section-content">
+				<div class="partner-content">
+					<div class="partner-container">
+						<div class="partner-item" title="ParkenPay Logo">
+							<img src="./assets/media/parkenpay-logo.png">
+						</div>
+						<div class="partner-item" title="Carlos Osterne Logo">
+							<img src="./assets/media/carlos-osterne-logo.png">
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
