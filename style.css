@@ -522,7 +522,7 @@ footer{
 		display: flex;
 		position: fixed;
 		justify-content: flex-start;
-		align-items: flex-start;
+		align-items: center;
 		width: 0%;
 		height: calc(100vh - 50px);
 		left: 0;
@@ -530,7 +530,6 @@ footer{
 		overflow: hidden;
 		transition: all .5s;
 		background-color: #16213d;
-		color: ;
 		padding: 0px;
 	}
 
@@ -581,7 +580,7 @@ footer{
 	}
 
 	.project-item{
-		width: 180px;
+		width: 160px;
 	}
 
 	.project-item-description-container{

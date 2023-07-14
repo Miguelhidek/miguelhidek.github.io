@@ -52,7 +52,7 @@ let projectList = [
 			"HTML e CSS",
 			"Javascript",
 		],
-		link:"https://miguelhidek.github.io/phoneTopAcademic/"
+		link:"https://miguelhidek.github.io/appleTopAcademic/"
 	},
 ];
 
